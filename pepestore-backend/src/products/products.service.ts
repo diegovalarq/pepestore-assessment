@@ -9,7 +9,6 @@ export class ProductsService {
   private products: Product[];
 
   constructor() {
-    // Load products from JSON file so the catalog is data-driven
     this.products = ProductsData;
   }
 

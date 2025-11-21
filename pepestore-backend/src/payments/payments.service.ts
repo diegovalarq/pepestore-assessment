@@ -25,7 +25,6 @@ export class PaymentsService {
       const session = await this.fintoc.checkoutSessions.create({
         amount,
         currency,
-        // In a real app, you might want to pass metadata or customer info
       });
       return session;
     } catch (error) {
@@ -54,7 +53,6 @@ export class PaymentsService {
   }
 
   private handleCheckoutSessionFinished(data: any) {
-    // Logic to update order status in database would go here
     this.logger.log('Checkout session finished', data);
   }
 }
