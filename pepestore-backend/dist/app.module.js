@@ -12,12 +12,20 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const products_module_1 = require("./products/products.module");
 const payments_module_1 = require("./payments/payments.module");
+const serve_static_1 = require("@nestjs/serve-static");
+const path_1 = require("path");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [products_module_1.ProductsModule, payments_module_1.PaymentsModule],
+        imports: [
+            serve_static_1.ServeStaticModule.forRoot({
+                rootPath: (0, path_1.join)(__dirname, '..', 'public'),
+            }),
+            products_module_1.ProductsModule,
+            payments_module_1.PaymentsModule,
+        ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
