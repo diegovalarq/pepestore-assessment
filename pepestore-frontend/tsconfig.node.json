@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "isolatedModules": true,
     "resolveJsonModule": true,
+    "types": ["vite/client"],
     "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"]
