@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Coca Cola",
+    "price": 1500,
+    "currency": "CLP",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=300&q=80",
+    "description": "Refreshing cola drink",
+    "category": "drinks",
+    "stock": 20
+  },
+  {
+    "id": "2",
+    "name": "Lays Chips",
+    "price": 1200,
+    "currency": "CLP",
+    "image": "https://images.unsplash.com/photo-1566478919030-41567d13f4f7?auto=format&fit=crop&w=300&q=80",
+    "description": "Classic salted potato chips",
+    "category": "snacks",
+    "stock": 15
+  },
+  {
+    "id": "3",
+    "name": "Chocolate Bar",
+    "price": 1000,
+    "currency": "CLP",
+    "image": "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=300&q=80",
+    "description": "Delicious milk chocolate bar",
+    "category": "snacks",
+    "stock": 25
+  },
+  {
+    "id": "4",
+    "name": "Orange Juice",
+    "price": 2000,
+    "currency": "CLP",
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=300&q=80",
+    "description": "Freshly squeezed orange juice",
+    "category": "drinks",
+    "stock": 10
+  }
+]
