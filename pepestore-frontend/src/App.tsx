@@ -30,8 +30,7 @@ function App() {
     if (search) params.buscar = search;
 
     const API_BASE =
-    import.meta.env.VITE_API_BASE_URL ??
-    'https://pepestore-technical-assessment.onrender.com';
+    import.meta.env.VITE_API_BASE_URL;
 
     axios.get<Product[]>(`${API_BASE}/products`, { params })
       .then(response => {
@@ -78,8 +77,7 @@ function App() {
     try {
       // 1. Create Checkout Session
       const API_BASE =
-        import.meta.env.VITE_API_BASE_URL ??
-        'https://pepestore-technical-assessment.onrender.com';
+        import.meta.env.VITE_API_BASE_URL;
       const response = await axios.post(`${API_BASE}/payments/checkout`, {
         amount: total,
       });
