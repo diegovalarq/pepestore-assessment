@@ -32,7 +32,7 @@ function App() {
     const API_BASE =
     import.meta.env.VITE_API_BASE_URL ??
     'https://pepestore-technical-assessment.onrender.com';
-    
+
     axios.get<Product[]>(`${API_BASE}/products`, { params })
       .then(response => {
         setProducts(response.data);
@@ -77,7 +77,12 @@ function App() {
   const handlePayment = async () => {
     try {
       // 1. Create Checkout Session
-      const response = await axios.post('/api/payments/checkout', { amount: total });
+      const API_BASE =
+        import.meta.env.VITE_API_BASE_URL ??
+        'https://pepestore-technical-assessment.onrender.com';
+      const response = await axios.post(`${API_BASE}/payments/checkout`, {
+        amount: total,
+      });
       const { session_token } = response.data;
 
       // 2. Open Fintoc Widget
